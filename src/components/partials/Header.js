@@ -6,7 +6,7 @@ const Header = () => {
   const toggleBtn = () => setNavOpen(!navOpen);
   
   return (
-    <nav className="bg-primary fixed top-0 right-0 left-0 shadow-lg">
+    <nav className="bg-primary fixed top-0 right-0 left-0 shadow-lg z-30" >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-7">

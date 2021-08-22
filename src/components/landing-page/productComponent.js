@@ -8,29 +8,15 @@ const ProductComponent = () => {
 const renderList = products.map((product) => {
     const { id, title, image, price, category } = product;
     return (
-        <div className="w-full md:w-1/3 py-4 px-4 bg-white shadow-lg rounded-lg my-4 md:my-8" key={id}>
-            <Link to={`/product/${id}`}>
-                <div className="w-full flex justify-between p-3">
-                    <div className="flex">
-                    <div className="rounded-full h-8 w-8 flex items-center justify-center overflow-hidden">
-                        <img
-                        src={image}
-                        alt={title}
-                        />
-                    </div>
-                    <span className="pt-1 ml-2 font-bold text-sm">braydoncoyer</span>
-                    </div>
-                    <span className="px-2 hover:bg-gray-300 cursor-pointer rounded">
-                    <i className="fas fa-ellipsis-h pt-2 text-lg"></i>
-                    </span>
-                </div>
+        <div className="w-full col-span-1 py-4 px-4 flex items-center relative overflow-hidden bg-white shadow-lg rounded-lg" key={id}>
+            <Link to={`/product/${id}`} className="flex items-center">
                 <img
-                    className="w-full bg-cover"
+                    className="w-full bg-cover mb-20"
                     src={image}
                     alt={title}
                 />
                 <div className="px-3 pb-2">
-            <div className="px-3 mt-5 h-9 w-full bg-primary flex items-center">
+            <div className="px-3 absolute left-0 right-0 bottom-0 mt-5 h-12 w-full bg-primary flex items-center">
                 <div className="text-sm flex items-center justify-between w-full">
                     <h3 className="font-medium mr-2">{category}</h3>   
                     <h3 className="text-accent">$ {price}</h3> 

@@ -26,7 +26,7 @@ const ProductListing = () => {
     <div>
         <HeroPage/>
       <div className="text-green-500 text-2xl md:text-3xl lg:text-4xl py-20 font-bold">
-        <div className="container flex flex-wrap">
+        <div className="container grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-5">
           <ProductComponent />
         </div>
       </div>

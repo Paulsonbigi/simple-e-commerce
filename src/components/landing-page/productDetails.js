@@ -33,7 +33,7 @@ const ProductDetails = () => {
       {Object.keys(product).length === 0 ? (
         <div className="container">Loading ...</div>
       ) : (
-        <div className="container block md:flex md:items-center w-10/12 border-2 p-4 md:w-3/4 bg-white mx-auto">
+        <div className="container mb-8  block md:flex md:items-center w-10/12 border-2 p-4 md:w-3/4 bg-white mx-auto">
           <div className=" flex items-center w-2/3 mx-auto justify-center overflow-hidden">
             <img src={image} alt={title} />
           </div>
